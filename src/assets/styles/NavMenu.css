@@ -1,0 +1,9 @@
+.nav-menu {
+  font-size: 24px;
+}
+
+.nav-menu-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}

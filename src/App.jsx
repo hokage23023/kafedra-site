@@ -1,4 +1,5 @@
 import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
 import MainPage from "./components/pages/MainPage";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <Header />
       <MainPage />
+      <Footer />
     </div>
   );
 }

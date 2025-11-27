@@ -1,9 +1,13 @@
-import Component from "../ui/Component";
+import MainInformation from "../ui/MainInformation";
+import NavMenu from "../ui/NavMenu";
+import Sidebar from "../ui/Sidebar";
 
 function MainPage() {
   return (
-    <div>
-      <Component />
+    <div className="main-grid">
+      <NavMenu />
+      <Sidebar />
+      <MainInformation />
     </div>
   );
 }

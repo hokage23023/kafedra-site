@@ -1,0 +1,5 @@
+.footer-area {
+  grid-area: footer;
+  background-color: #95afc0;
+  color: white;
+}
