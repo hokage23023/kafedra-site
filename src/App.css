@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+/* Скидання стилів */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Головний контейнер Grid - повторює структуру вашого малюнка */
+.app-container {
+  display: grid;
+  height: 90vh;
+  /* Висота на весь екран */
+  gap: 10px;
+  /* Відступи між блоками */
+
+  /* Налаштування колонок:
+     Ліва частина (Заголовок + Вміст) - ширша (2fr).
+     Права частина (Меню + Сайдбар + Футер) - вужча (1fr).
+  */
+  grid-template-columns: 2fr 1fr;
+
+  /* Налаштування рядків:
+     1 рядок: Заголовок і Меню (фіксована висота).
+     2 рядок: Вміст і Додаткова секція (займають вільне місце).
+     3 рядок: Вміст (продовження) і Футер (автоматична висота).
+  */
+  grid-template-rows: 80px 1fr auto;
+
+  /* Карта областей (Naming areas) згідно з вашим фото */
+  grid-template-areas:
+    "header menu"
+    "content sidebar"
+    "content footer";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Стилі для блоків (для наочності додані рамки як на фото) */
+.box {
+  background-color: #fff;
+  border: 2px solid #333;
+  padding: 20px;
+  border-radius: 5px;
+  overflow-y: auto;
+  /* Щоб текст не вилазив */
+}
+
+/* Прив'язка класів до зон Grid */
+.header-area {
+  grid-area: header;
+  background-color: #dff9fb;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+
+.menu-area {
+  grid-area: menu;
+  background-color: #c7ecee;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.content-area {
+  grid-area: content;
+  background-color: #ffffff;
+}
+
+.sidebar-area {
+  grid-area: sidebar;
+  background-color: #f6e58d;
+}
+
+.footer-area {
+  grid-area: footer;
+  background-color: #95afc0;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Стилізація списків */
+ul {
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #e056fd;
+}
+
+h2,
+h3 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+/* Адаптивність для мобільних (все в одну колонку) */
+@media (max-width: 768px) {
+  .app-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "menu"
+      "content"
+      "sidebar"
+      "footer";
+    height: auto;
   }
 }
