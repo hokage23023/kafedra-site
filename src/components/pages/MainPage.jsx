@@ -1,13 +1,13 @@
 import MainInformation from "../ui/MainInformation";
-import NavMenu from "../ui/NavMenu";
 import Sidebar from "../ui/Sidebar";
+import Footer from "../layout/Footer";
 
 function MainPage() {
   return (
     <div className="main-grid">
-      <NavMenu />
-      <Sidebar />
       <MainInformation />
+      <Sidebar />
+      <Footer />
     </div>
   );
 }

@@ -1,9 +1,12 @@
 .nav-menu {
   font-size: 24px;
+  padding: 16px;
 }
 
 .nav-menu-list {
   display: flex;
   flex-direction: row;
   gap: 16px;
+
+  padding: 0;
 }

@@ -20,7 +20,7 @@ function MainInformation() {
   };
 
   return (
-    <main className="box content-area">
+    <main className="box main-content">
       <h2>Інформація про кафедру</h2>
       <div className="content-grid">
         {data.content.map((item) => (

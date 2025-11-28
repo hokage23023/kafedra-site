@@ -1,5 +1,9 @@
-.footer-area {
-  grid-area: footer;
-  background-color: #95afc0;
+.footer {
+  background-color: #9c839a;
   color: white;
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
 }
