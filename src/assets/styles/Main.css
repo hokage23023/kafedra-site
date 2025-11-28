@@ -1,3 +1,7 @@
 .main-content {
   grid-row: span 2;
 }
+
+.cafedra-inf-item {
+  margin-bottom: 20px;
+}

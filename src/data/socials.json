@@ -1,0 +1,28 @@
+{
+  "content": [
+    {
+      "name": "Instagram",
+      "href": "https://www.instagram.com/"
+    },
+    {
+      "name": "Facebook",
+      "href": "https://www.facebook.com/"
+    },
+    {
+      "name": "Twitter",
+      "href": "https://twitter.com/"
+    },
+    {
+      "name": "LinkedIn",
+      "href": "https://www.linkedin.com/"
+    },
+    {
+      "name": "YouTube",
+      "href": "https://www.youtube.com/"
+    },
+    {
+      "name": "TikTok",
+      "href": "https://www.tiktok.com/"
+    }
+  ]
+}
