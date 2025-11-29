@@ -19,18 +19,23 @@ li {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: #495057;
   font-weight: bold;
 }
 
 a:hover {
-  color: #e056fd;
+  color: #C0C0C0;
+}
+
+h1 {
+  color: #0B1426
 }
 
 h2,
 h3 {
   margin-bottom: 16px;
   padding-bottom: 5px;
+  color: #0B1426
 }
 
 /* Адаптивність для мобільних (все в одну колонку) */
@@ -40,4 +45,9 @@ h3 {
     grid-template-rows: auto;
     height: auto;
   }
+}
+
+.box {
+  padding: 10px;
+  border-radius: 20px;
 }

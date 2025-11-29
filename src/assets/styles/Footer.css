@@ -1,9 +1,15 @@
 .footer {
-  background-color: #9c839a;
-  color: white;
+  background-color: #778899;
+  color: #212529;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .footer-links {
   display: flex;
   gap: 16px;
+
 }

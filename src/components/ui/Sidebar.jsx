@@ -2,7 +2,7 @@ import data from "../../data/announcements.json";
 
 function Sidebar() {
   return (
-    <aside className="sidebar">
+    <aside className="box sidebar">
       <h3>Оголошення</h3>
       <ul>
         {data.content.map((item, index) => (

@@ -1,0 +1,9 @@
+.sidebar {
+    background-color: #C5CAED;
+    text-align: center;
+    font-size: 22px;
+
+    h3 {
+        margin-bottom: 40px;
+    }
+}
