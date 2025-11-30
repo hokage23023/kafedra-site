@@ -1,0 +1,28 @@
+.main-content {
+  grid-row: span 2;
+
+  h2 {
+    margin-bottom: 70px;
+
+    background-color: var(--color-h-bg);
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .main-content-grid {
+    display: grid;
+
+    gap: 10px;
+  }
+
+  .cafedra-inf-item {
+    margin-left: 25px;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    background-color: var(--color-card);
+    font-size: 20px;
+  }
+}

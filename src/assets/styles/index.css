@@ -1,20 +1,18 @@
+@import url("./variables.css");
 @import url("./App.css");
 @import url("./Header.css");
 @import url("./Footer.css");
 @import url("./NavMenu.css");
-@import url("./Main.css");
+@import url("./MainBlock.css");
 @import url("./Sidebar.css");
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 
 body {
   margin: 0;
-  font-family: "Arimo";
+  background-color: var(--color-bg);
+
+  font-family: var(--font-text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #DCDCFC;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }

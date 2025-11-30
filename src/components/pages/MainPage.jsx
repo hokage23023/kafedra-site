@@ -1,11 +1,11 @@
-import MainInformation from "../ui/MainInformation";
+import MainBlock from "../ui/MainBlock";
 import Sidebar from "../ui/Sidebar";
 import Footer from "../layout/Footer";
 
 function MainPage() {
   return (
-    <div className="main-grid">
-      <MainInformation />
+    <div className="page-grid">
+      <MainBlock />
       <Sidebar />
       <Footer />
     </div>

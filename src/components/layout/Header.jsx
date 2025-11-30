@@ -4,8 +4,10 @@ import NavMenu from "../ui/NavMenu";
 function Header() {
   return (
     <header className="header">
-      <img src={logo} className="header-logo" alt="logo" />
-      <h1>Кафедра Інформаційних Технологій</h1>
+      <div className="logo-name-wrapper">
+        <img src={logo} className="header-logo" alt="logo" />
+        <h1>Кафедра Інформаційних Технологій</h1>
+      </div>
       <NavMenu />
     </header>
   );

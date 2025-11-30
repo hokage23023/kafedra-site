@@ -1,4 +1,4 @@
-.main-grid {
+.page-grid {
   display: grid;
   height: 90vh;
   gap: 10px;
@@ -7,14 +7,15 @@
   grid-template-rows: 2fr 1fr;
 }
 
+.box {
+  padding: 10px;
+  border-radius: 20px;
+}
+
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-li {
-  margin-bottom: 10px;
 }
 
 a {
@@ -24,18 +25,20 @@ a {
 }
 
 a:hover {
-  color: #C0C0C0;
+  color: #c0c0c0;
 }
 
 h1 {
-  color: #0B1426
+  color: var(--color-text);
+  font-family: var(--font-h);
 }
 
 h2,
 h3 {
   margin-bottom: 16px;
-  padding-bottom: 5px;
-  color: #0B1426
+  padding-bottom: 6px;
+  color: var(--color-text);
+  font-family: var(--font-h);
 }
 
 /* Адаптивність для мобільних (все в одну колонку) */
@@ -45,9 +48,4 @@ h3 {
     grid-template-rows: auto;
     height: auto;
   }
-}
-
-.box {
-  padding: 10px;
-  border-radius: 20px;
 }

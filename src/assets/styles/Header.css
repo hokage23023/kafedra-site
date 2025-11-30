@@ -1,16 +1,24 @@
 .header {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 
   margin-bottom: 8px;
   padding: 8px;
 
-  background-color: #778899;
-}
+  background-color: var(--color-dark-bg);
 
-.header-logo {
-  max-width: 80px;
-  max-height: 80px;
-  margin: 8px;
+  .logo-name-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .header-logo {
+    max-width: 80px;
+    max-height: 80px;
+    margin: 8px;
+  }
 }
