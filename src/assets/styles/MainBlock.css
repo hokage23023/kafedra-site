@@ -1,28 +1,52 @@
 .main-content {
   grid-row: span 2;
 
-  h2 {
-    margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    background-color: var(--color-h-bg);
+  padding: 0 30px;
+
+  font-size: 18px;
+  line-height: 150%;
+
+  .block-title {
+    margin-bottom: 50px;
+
     text-align: center;
-    font-size: 35px;
+    font-size: 32px;
+  }
+
+  .cafedra-about-section {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .cafedra-logo-wrapper {
+    width: 100%;
+  }
+
+  .cafedra-logo {
+    width: 200px;
+    height: 200px;
   }
 
   .main-content-grid {
     display: grid;
 
+    width: 100%;
+
     gap: 10px;
   }
 
   .cafedra-inf-item {
-    margin-left: 25px;
-
     padding: 10px;
 
     border-radius: 10px;
 
     background-color: var(--color-card);
-    font-size: 20px;
   }
 }

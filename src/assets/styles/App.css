@@ -20,23 +20,12 @@ ul {
 
 a {
   text-decoration: none;
-  color: #495057;
-  font-weight: bold;
 }
 
-a:hover {
-  color: #c0c0c0;
-}
-
-h1 {
-  color: var(--color-text);
-  font-family: var(--font-h);
-}
-
+h1,
 h2,
-h3 {
-  margin-bottom: 16px;
-  padding-bottom: 6px;
+h3,
+h4 {
   color: var(--color-text);
   font-family: var(--font-h);
 }

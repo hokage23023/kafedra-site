@@ -3,8 +3,12 @@
   --font-h: "Nunito";
 
   --color-text: #0b1426;
-  --color-h-bg: #8080ad;
+  --color-secondary-text: #555555;
+  --color-ref: #dedfe0;
+  --color-ref-hover: #c0c0c0;
+
   --color-card: #b6b6d9;
   --color-bg: #dcdcfc;
   --color-dark-bg: #778899;
+  --color-block-bg: #c5caed;
 }
